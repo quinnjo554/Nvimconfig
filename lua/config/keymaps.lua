@@ -20,3 +20,6 @@ vim.api.nvim_set_keymap("t", ":q!", "<C-\\><C-n>:q!<CR>", { noremap = true })
 
 --Ctr click into
 vim.api.nvim_set_keymap("n", "zm", "<Cmd>lua vim.lsp.buf.definition()<CR>", { noremap = true, silent = true })
+
+--Github Copilot
+vim.api.nvim_set_keymap("i", "<C-J>", 'copilot#Accept("<CR>")', { expr = true, silent = true })
